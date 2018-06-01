@@ -1,31 +1,26 @@
 import cmath
-
 class Circle():
     def __init__(self, radius):
         self.setRadius(radius)
-
     def getRadius(self):
         return self.__radius
-
     def setRadius(self, radius):
         if radius < 0:
-            raise RuntimeError("Negative radius")
+            raise RuntimeError("Negative radius Disallowed")
+        if radius ==0:
+            raise RuntimeError("No 0 Please")
+        if type(radius)!=int:
+            raise RuntimeError("Character Disallowed")
         else:
             self.__radius = radius
-
     def getArea(self):
         return self.__radius * self.__radius * cmath.pi
-
     def printCircle(self):
         print(self.__str__() + " radius: " + str(self.__radius))
 
-
+n=int(input("Enter Radius: "))
 try:
-    c1 = Circle(5)
-    print("c1's area is", c1.getArea())
-    c2 = Circle(-5)
-    print("c2's area is", c2.getArea())
-    c3 = Circle(0)
-    print("c3's area is", c3.getArea())
+  c= Circle(n)
+  print("c's area is: ",c.getArea())
 except RuntimeError as ex:
-    print("Invalid radius", ex)
+  print("Invalid radius,", ex)
