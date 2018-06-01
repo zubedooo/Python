@@ -7,7 +7,9 @@ def stats(filename):
             for word in line.split():
                 wordcount += 1
                 charactercount += len(word)
-    print(linecount,wordcount,charactercount)
+    print("Line Count:",linecount)
+    print("Word Count:",wordcount)
+    print("Character Count:",charactercount)
 file=open('samplefile.txt','w+')
 file.write('Hello\nI study in\nMSRIT')
 file.close()
