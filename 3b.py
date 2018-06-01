@@ -9,6 +9,7 @@ class bank:
             self.bal -= amt
         elif self.bal - amt>0:
             self.overdraft += amt + amt * self.ofee/100
+            self.bal -= amt
     def deposit(self,amt):
         self.bal += amt
     def interest(self,time):
