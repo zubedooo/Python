@@ -1,4 +1,3 @@
-count_python=0
 class Student():
     count=0
     pycount=0
