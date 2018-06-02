@@ -15,7 +15,7 @@ for i in range(n):
     usn=input("Enter USN ")
     sub=input("Enter Subject ")
     result=Student(usn,name,sub)
-    listofstud.append(d)
+    listofstud.append(result)
 for i in listofstud:
     if i.Subject.lower()=="python":
       print (i.Name,"Has taken Python")
