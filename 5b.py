@@ -9,12 +9,9 @@ class Triangle(object):
             return True
         else:
             return False       
-class Equilateral(Triangle):
-    angle = 60
-    def __init__(self):
-        self.angle1 = self.angle
-        self.angle2 = self.angle
-        self.angle3 = self.angle
-my_triangle = Triangle(90,30,60)
+x=int(input("Enter Angle 1"))
+y=int(input("Enter Angle 2"))
+z=int(input("Enter Angle 3"))
+my_triangle = Triangle(x,y,z)
 print (my_triangle.number_of_sides)
 print (my_triangle.check_angles())
