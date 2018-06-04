@@ -1,5 +1,6 @@
 from Mystring import PalAndVowCount
 inp = input("Enter String: ")
+inp =inp.lower()
 opt = int(input("\nSelect:\n(1)Palindrome Check\n(2)Count Vowels\n "))
 
 if opt == 1:
