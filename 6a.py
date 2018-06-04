@@ -1,6 +1,6 @@
 linelist=list()
 while True:
-    line=raw_input()
+    line=input()
     if line=='quit':
         break
     else:
